@@ -26,7 +26,7 @@
 		D05B38611DDB536F0012AE08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D05B38641DDB536F0012AE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D05B38661DDB536F0012AE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D05B386C1DDB54400012AE08 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		D05B386C1DDB54400012AE08 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = ../DataModel.swift; sourceTree = "<group>"; };
 		D05B386E1DDB5BEA0012AE08 /* ListOfListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfListViewController.swift; sourceTree = "<group>"; };
 		D05B38701DDB5C5A0012AE08 /* ListOfListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfListTableViewCell.swift; sourceTree = "<group>"; };
 		D05B38721DDB5EBA0012AE08 /* ListOfItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfItemsViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,6 @@
 		D05B384E1DDB536F0012AE08 = {
 			isa = PBXGroup;
 			children = (
-				D05B386C1DDB54400012AE08 /* DataModel.swift */,
 				D05B38591DDB536F0012AE08 /* W4-ToDoListProject-AlexMitchell */,
 				D05B38581DDB536F0012AE08 /* Products */,
 			);
@@ -67,6 +66,7 @@
 			children = (
 				D05B385A1DDB536F0012AE08 /* AppDelegate.swift */,
 				D05B385E1DDB536F0012AE08 /* Main.storyboard */,
+				D05B386C1DDB54400012AE08 /* DataModel.swift */,
 				D05B38701DDB5C5A0012AE08 /* ListOfListTableViewCell.swift */,
 				D05B386E1DDB5BEA0012AE08 /* ListOfListViewController.swift */,
 				D05B38721DDB5EBA0012AE08 /* ListOfItemsViewController.swift */,
@@ -320,6 +320,7 @@
 				D05B386B1DDB536F0012AE08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

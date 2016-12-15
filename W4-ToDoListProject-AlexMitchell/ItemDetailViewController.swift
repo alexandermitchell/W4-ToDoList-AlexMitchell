@@ -10,8 +10,6 @@ import UIKit
 
 class ItemDetailViewController: UIViewController {
     
-    
-    
     var selectedListIndex: Int!
     var selectedItemIndex: Int!
     
@@ -27,7 +25,9 @@ class ItemDetailViewController: UIViewController {
         let saveitem = lists[selectedListIndex].items[selectedItemIndex]
         
         saveitem.title = taskExpandedTitleTextField.text!
-        saveitem.description = taskExpandedDescriptionTextField.text!
+        saveitem.itemDescription = taskExpandedDescriptionTextField.text!
+        
+        Model.shared.persistListsToDefaults()
         
         
     }
@@ -38,7 +38,7 @@ class ItemDetailViewController: UIViewController {
         let item = lists[selectedListIndex].items[selectedItemIndex]
         
         taskExpandedTitleTextField.text = item.title
-        taskExpandedDescriptionTextField.text = item.description
+        taskExpandedDescriptionTextField.text = item.itemDescription
         
         // Do any additional setup after loading the view.
     }

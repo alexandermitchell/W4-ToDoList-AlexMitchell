@@ -20,13 +20,14 @@ class ListOfItemsViewController: UIViewController, UITableViewDataSource, UITabl
     
     
     @IBAction func addTask(_ sender: Any) {
-        let newTask = Item(title: taskTitleTextField.text!, description: taskDescriptionTextField.text!)
+        let newTask = Item(title: taskTitleTextField.text!, itemDescription: taskDescriptionTextField.text!)
         
         lists[selectedListIndex].items.append(newTask)
         taskTitleTextField.text = ""
         taskDescriptionTextField.text = ""
         
         itemListTableView.reloadData()
+        Model.shared.persistListsToDefaults()
         
     }
     
@@ -38,7 +39,7 @@ class ListOfItemsViewController: UIViewController, UITableViewDataSource, UITabl
         let task = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! ListTableViewCell
             
             task.taskNameLabel.text = lists[selectedListIndex].items[indexPath.row].title
-        //lists[selectedListIndex].items[indexPath.row].description
+        //lists[selectedListIndex].items[indexPath.row].itemDescription
         return task
         
     }
@@ -46,6 +47,7 @@ class ListOfItemsViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             lists[selectedListIndex].items.remove(at: indexPath.row)
+            Model.shared.persistListsToDefaults()
             itemListTableView.reloadData()
         }
     }
