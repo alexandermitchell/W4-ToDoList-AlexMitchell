@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 var lists = [List]()
 
@@ -85,6 +86,7 @@ class Model {
             lists = savedLists
         }
     }
+    
 }
 
 
