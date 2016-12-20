@@ -26,6 +26,9 @@ class ListOfListViewController: UIViewController, UITableViewDataSource, UITable
         
         listOfListsTableView.reloadData()
         
+        Model.shared.persistListsToDefaults()
+        
+        
         
     }
     
@@ -47,6 +50,7 @@ class ListOfListViewController: UIViewController, UITableViewDataSource, UITable
         if editingStyle == .delete {
             lists.remove(at: indexPath.row)
             listOfListsTableView.reloadData()
+            Model.shared.persistListsToDefaults()
         }
     }
     
@@ -56,12 +60,7 @@ class ListOfListViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     override func viewDidLoad() {
-        
-        if let rawList = UserDefaults.standard.array(forKey: "LoL") {
-            lists = rawList as! [List]
-        }
         super.viewDidLoad()
-        
         
     }
 
