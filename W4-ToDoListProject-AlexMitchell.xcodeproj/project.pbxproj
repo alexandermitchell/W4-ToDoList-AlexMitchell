@@ -17,6 +17,7 @@
 		D05B38731DDB5EBA0012AE08 /* ListOfItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B38721DDB5EBA0012AE08 /* ListOfItemsViewController.swift */; };
 		D05B38751DDB5F230012AE08 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B38741DDB5F230012AE08 /* ListTableViewCell.swift */; };
 		D05B38771DDB63450012AE08 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B38761DDB63450012AE08 /* ItemDetailViewController.swift */; };
+		D0FF3E951E099CF5008B0820 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0FF3E941E099CF5008B0820 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D05B38721DDB5EBA0012AE08 /* ListOfItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfItemsViewController.swift; sourceTree = "<group>"; };
 		D05B38741DDB5F230012AE08 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		D05B38761DDB63450012AE08 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		D0FF3E941E099CF5008B0820 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				D05B38611DDB536F0012AE08 /* Assets.xcassets */,
 				D05B38631DDB536F0012AE08 /* LaunchScreen.storyboard */,
 				D05B38661DDB536F0012AE08 /* Info.plist */,
+				D0FF3E941E099CF5008B0820 /* GoogleService-Info.plist */,
 			);
 			path = "W4-ToDoListProject-AlexMitchell";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				D05B38651DDB536F0012AE08 /* LaunchScreen.storyboard in Resources */,
 				D05B38621DDB536F0012AE08 /* Assets.xcassets in Resources */,
 				D05B38601DDB536F0012AE08 /* Main.storyboard in Resources */,
+				D0FF3E951E099CF5008B0820 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

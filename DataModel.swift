@@ -16,7 +16,6 @@ class List: NSObject, NSCoding {
     private struct Keys {
         static let title = "title"
         static let items = "items"
-        
     }
     
     var title: String
